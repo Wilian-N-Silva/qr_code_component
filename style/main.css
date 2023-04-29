@@ -63,6 +63,8 @@ body {
   font: var(--typography-body);
   letter-spacing: var(--typography-body-letter-spacing);
   color: var(--color-grey);
+  max-width: 26ch;
+  margin: 0 auto;
 }
 
 .attribution {
