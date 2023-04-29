@@ -1,0 +1,73 @@
+:root {
+  --typography-heading: 700 22px/125% "Outfit", sans-serif;
+  --typography-body: 400 15px/125% "Outfit", sans-serif;
+  --typography-body-letter-spacing: 0.1875px;
+
+  --color-blue: #2c7dfa;
+  --color-blue--shade: #3685ff;
+  --color-grey: #7d889e;
+  --color-light-grey: #d5e1ef;
+  --color-dark-navy: #1f314f;
+  --color-white: #ffffff;
+
+  --box-shadow-card: 0px 25px 25px rgba(0, 0, 0, 0.05);
+  --box-shadow-qrcode-wrapper: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--color-light-grey);
+}
+
+.card {
+  background: var(--color-white);
+  padding: 16px 16px 40px;
+  border-radius: 20px;
+  max-width: 320px;
+  box-shadow: var(--box-shadow-card);
+}
+
+.card__qrcode-wrapper {
+  margin-bottom: 24px;
+}
+
+.card__qrcode-wrapper img {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.card__texts {
+  text-align: center;
+}
+
+.card__texts h1 {
+  font: var(--typography-heading);
+  color: var(--color-dark-navy);
+  margin-bottom: 16px;
+}
+.card__texts p {
+  font: var(--typography-body);
+  letter-spacing: var(--typography-body-letter-spacing);
+  color: var(--color-grey);
+}
+
+.attribution {
+  font: var(--typography-body);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
